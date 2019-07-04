@@ -1,0 +1,248 @@
+/*************************************** HEADER *******************************************/
+/******************************************************************************************/
+
+.header {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.link {
+    color: #ffffff;
+}
+
+.home-title {
+    font-size: 4rem;
+}
+
+.big-button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+/*************************************** SPINNER ******************************************/
+/******************************************************************************************/
+
+/* .spinner {
+    margin: 2rem auto;
+    width: 14rem;
+    height: 14rem;
+    background: rgb(49, 37, 32);
+    overflow: hidden;
+    animation: move .6s infinite;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 30px #222121b7;
+}
+
+.spinner__triangle {
+    width: 0;
+    height: 0;
+    border-right: 7rem solid transparent;
+    border-left: 7rem solid transparent;
+    border-top: 7rem solid rgba(97, 28, 177, 0.924);
+}
+
+.spinner__inner--round {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 30px #222121b7 inset;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(36deg);
+    }
+
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+
+    70% {
+        transform: rotate(252deg);
+    }
+
+    80% {
+        transform: rotate(288deg);
+    }
+
+    90% {
+        transform: rotate(324deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+/*************************************** SECTION-1 ****************************************/
+/******************************************************************************************/
+
+.circle {
+    border: 3px solid #FFDD57;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.sport-icon {
+    padding-left: 1.4rem;
+}
+
+.kinds {
+    padding: 5rem 0;
+}
+
+.kind {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.kind-title {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.kind-description {
+    text-align: left;
+}
+
+/*************************************** SECTION-2 ****************************************/
+/******************************************************************************************/
+
+.bikes-type {
+    position: relative;
+}
+
+/*.arrows {
+    position: absolute;
+}*/
+
+.left-arrow {
+    position: absolute;
+    left: 5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bike-title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+/*************************************** SECTION-3 ****************************************/
+/******************************************************************************************/
+
+.competition-title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+
+/************************************** FOOTER *****************************************/
+/***************************************************************************************/
+
+.custom-footer {
+    padding: 2rem;
+    width: 100vw;
+    flex: 0 0 auto;
+    color: #b7b7b7;
+    background-color: #4a4a4a;
+}
+
+.social-item {
+    padding: .8rem;
+}
+
+/*********************************** CYCLE SECTION *************************************/
+/***************************************************************************************/
+
+.cycle-service {
+    padding: 5rem 1rem;
+    display: flex;
+    background-image: linear-gradient(#a5a2a2, #e4e0e0);
+}
+.cycle-col {
+    margin: 0 2rem;
+    width: 45%;
+}
+
+.cycle-col__image {
+    margin-top: 3rem;
+}
+
+.cycle-col__title {
+    margin: 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cycle-col__text {
+    margin: 1rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.cycle-col__text:last-of-type {
+    margin-bottom: 3rem;
+}
+
+
+.btn__item {
+    margin: 0 auto 2rem;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 2rem;
+    display: block;
+    color: rgb(39, 24, 121);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgb(255, 182, 45);
+}
