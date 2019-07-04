@@ -1,2 +1,2 @@
-//alert('hi');
+//alert('hi, I\'m Stas');
 
