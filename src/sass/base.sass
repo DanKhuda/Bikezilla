@@ -1,0 +1,76 @@
+@import './variables.sass'
+@import './mixins.sass'
+
+
+.header__title
+  +mobile
+    padding: .5rem
+    font-size: 1.5rem
+    color: red
+
+  +tablet-portrait
+    font-size: 5rem
+    color: white
+
+  +tablet-landscape
+    color: blue
+
+  +desktop
+    font-size: 6.5rem
+    color: orange
+
+  +large-desktop
+    color: green
+
+  padding: 3rem
+  font-weight: bold
+
+
+.spinner 
+    margin: 2rem auto
+    width: 14rem
+    height: 14rem
+    background: rgb(49, 37, 32)
+    overflow: hidden
+    animation: move 2s infinite linear
+    border-radius: 50%
+    position: relative
+    box-shadow: 0 0 30px $black
+
+.spinner__triangle 
+    width: 0
+    height: 0
+    border-right: 7rem solid transparent
+    border-left: 7rem solid transparent
+    border-top: 7rem solid $purple
+
+.spinner__inner
+    width: 10rem
+    height: 10rem
+    border-radius: 50%
+    position: absolute
+    top: 2rem
+    left: 2rem
+    background-color: #fff
+    box-shadow: 0 0 30px $black inset
+
+
+@keyframes move
+  to
+    transform: rotate(360deg)
+
+.competition-description
+  .big-button
+    background-color: $yellow
+    border-color: transparent
+    color: rgba(0,0,0,.7)
+    border-radius: 290486px
+    padding-left: 1em
+    padding-right: 1em
+    cursor: pointer
+    justify-content: center
+    white-space: nowrap
+
+.custom-footer
+  display: flex
+  justify-content: space-around
