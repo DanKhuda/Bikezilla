@@ -1,0 +1,88 @@
+.header__title {
+  padding: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 575px) {
+  .header__title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: red;
+  }
+}
+@media (min-width: 576px) {
+  .header__title {
+    font-size: 5rem;
+    color: white;
+  }
+}
+@media (min-width: 768px) {
+  .header__title {
+    color: blue;
+  }
+}
+@media (min-width: 992px) {
+  .header__title {
+    font-size: 6.5rem;
+    color: orange;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    color: green;
+  }
+}
+
+.spinner {
+  margin: 2rem auto;
+  width: 14rem;
+  height: 14rem;
+  background: #312520;
+  overflow: hidden;
+  animation: move 2s infinite linear;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 30px #222121b7;
+}
+
+.spinner__triangle {
+  width: 0;
+  height: 0;
+  border-right: 7rem solid transparent;
+  border-left: 7rem solid transparent;
+  border-top: 7rem solid rgba(97, 28, 177, 0.924);
+}
+
+.spinner__inner {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 30px #222121b7 inset;
+}
+
+@keyframes move {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.competition-description .big-button {
+  background-color: #ffdd57;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 290486px;
+  padding-left: 1em;
+  padding-right: 1em;
+  cursor: pointer;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=base.css.map */
