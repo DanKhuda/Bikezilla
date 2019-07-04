@@ -22,6 +22,11 @@ module.exports = {
                 test: /\.pug$/,
                 use: ["pug-loader"]
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ["babel-loader", "eslint-loader"]
+            }
         ]
     },
     plugins: [
