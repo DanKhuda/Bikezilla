@@ -3,7 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 
-module.exports = {
+var config = {
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -27,8 +27,20 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('style.css'),
         new HtmlWebpackPlugin({
-            filename: "test.html",
+            filename: "[name].html",
             template: "./src/index.pug"
         })
     ]
+};
+
+module.exports = (env, argv) => {
+    if (argv.mode === 'development') {
+    config.devtool = 'source-map';
+    }
+
+    if (argv.mode === 'production') {
+
+    }
+
+    return config;
 };
